@@ -4,7 +4,7 @@
   font-family: "Lato", sans-serif;
 }
 
-
+/* Parallax background */
 .parallax {
   background-image:linear-gradient(rgb(0,0,0,0.55),rgb(0,0,0,0.55)), url("bikes.jpg");
   height: 100%; 
@@ -12,7 +12,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
+}
+.parallax-s {
+  background-image:linear-gradient(rgb(0,0,0,0.55),rgb(0,0,0,0.55)), url("bikes.jpg");
+  height: 50%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-xs {
+  background-image:linear-gradient(rgb(0,0,0,0.55),rgb(0,0,0,0.55)), url("bikes.jpg");
+  height: 30%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-xxs {
+  background-image:linear-gradient(rgb(0,0,0,0.55),rgb(0,0,0,0.55)), url("bikes.jpg");
+  height: 20%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body, html {
   height: 100%;
@@ -100,7 +124,7 @@ body, html {
     margin-right:10px
 }
 
-/* Inquire button settings*/
+/* Inquire button display*/
 .inquire-btn{
     margin-top: -8.75px;
     text-decoration: none;
@@ -127,6 +151,8 @@ body, html {
     float: right;
     display: block;
   }
+  #navbar .dropdown{
+  width: 100%;} /* Makes nav bar wider, to accomodate dropdown, but looks wonky*/
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -152,11 +178,9 @@ body, html {
 
 
 
-/* POSITION ISSUE Main home page section */
+
+/* Main home page section */
 #home-page{
-  /*width: 50%;
-  height: 25%;
-  left: 50px;*/
   width: 100%;
   height: 95%;
   position: absolute;
@@ -165,18 +189,14 @@ body, html {
 }
 .home-text{
   float: left;
-  position:absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  bottom: 8%;
-  z-index: 2;
+  margin-top: 20vh;
+  width: 70%;
 }
 .home-text h1{
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 40px;
   max-width: 600px; /* "max-width" makes text responsive */
- /* position: relative;*/
   margin-top: 20px;
   margin-bottom: 15px;
   margin-left: 40px;
@@ -189,25 +209,32 @@ body, html {
   color: whitesmoke
 }
 
-/* POSITION ISSUE Carat scroll down icon before parallax block*/
+/* Carat scroll down icon before parallax block */
 .icon-down{
   position: absolute;
-  top: 95%;
+  top: 90%;
   width: 100%;
   text-align: center;
   color: white;
 }
 
-/* POSITION ISSUE Social media icons home page*/
+/* Social media icons home page*/
 .icon-social{
-float: right;
-position: absolute;
-top: 95%;
-width: 100%;
-text-align: right;
+  float: right;
+  padding-top: 23vh;
+  padding-right: 40px;
+  list-style: none;
 }
+.icon-social ul li{
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+ }
+.icon-social ul li a{
+  color: white;
+} 
 
-/* Parallax block*/
+/* Parallax white block*/
 #scroll-box {
     color: #777;
     background-color:white;
@@ -226,6 +253,15 @@ text-align: right;
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
+#scroll-box img{
+  max-height: 700px;
+}
+@media screen and (max-width: 600px) {
+  #scroll-box{
+    padding: 50px 40px;
+    
+  }
+}
 
 /* Background image main heading*/
 .parallax h1{
@@ -243,13 +279,14 @@ text-align: right;
 .block{
   padding: auto;
   margin: auto;
-  width: 50%;
+  width: 75%;
   background-color: white;
   opacity: 85%;
   text-align:left;
   padding:50px 80px;
   font: 400 15px/1.8 Lato, sans-serif;
   color: rgb(78, 78, 78);
+  overflow:auto;
 }
 .block h3{
   text-align:center;
@@ -258,27 +295,30 @@ text-align: right;
   font: 20px "Lato", sans-serif;
   color: #111;
 }
+@media screen and (max-width: 600px) {
+ .block {
+    padding: 50px 40px;
+}}
 
-
+/* Contact Us */
 .contact-icons{
   color: #e57804;
   opacity: 100%;
 }
-
-
-.responsive {
-  max-width: 100%;
-  height: auto;
+#contact-us ol{
+  list-style: none;
+  text-align:center;
+ }
+#contact-us li{
+  padding: 0px 0px 10% 0px; 
 }
 
-#about-us img{
-  float:left;
-}
 
+/* Footer */
 footer {
   display: block;
   background-color: rgb(51, 51, 51);
-  position: fixed;
+  position: relative; 
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
@@ -287,11 +327,75 @@ footer {
   font-family: sans-serif;
   color: rgb(128, 128, 128);
 }
+
+/* Responsive image size */
 .responsive {
   max-width: 100%;
   height: auto;
 }
 
-#about-us img{
-  float:left;
+/* POSITION ISSUE Position about us owner image */
+/* About Us */
+.flex {
+  display: flex;
+  float: left;
+  width: 20vw;
+  padding: 25px;
 }
+
+.flex2 {
+  display: flex;
+  padding: 50px;
+  float: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+ }
+
+
+/* Bikes */
+.bikes{
+  padding: 50px 80px;
+ }
+.bikes ul li{
+  list-style: none;
+}
+.bikes a{
+  color: #e57804;
+}
+
+
+/* Inquire submit button */
+.submit input{
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-image: radial-gradient(circle at left,#e57804,#fbc904);
+ }
+
+
+#form ul{
+  text-align: left;
+}
+
+/* Service interest button to inquire form */
+.interest-btn{
+  text-decoration: none;
+  padding: 14px 23px;
+  color: white;
+  border-radius: 20px;
+  background-image: radial-gradient(circle at left,#e57804,#fbc904);
+}
+
+
+
