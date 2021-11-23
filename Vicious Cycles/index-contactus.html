@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicious Cycles</title>
+    <link rel="stylesheet" type="text/css" href="css/systems-main.css" >
+    <!-- Source for icons: font awesome source code -->
+    <script src="https://kit.fontawesome.com/f527d8a4ea.js" crossorigin="anonymous"></script>
+    <!-- Responsive top nav -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "mynavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "mynavbar";
+        }
+      }
+      </script>
+
+</head>
+
+<body>
+    <!-- Top navigation bar -->
+    <nav id="navbar" class="mynavbar">
+        
+          <a href=index-home.html class="logo"><img src="images/vicious-cycles-logo.png"></a>
+          <a href="index-home.html">Home</a>
+          <a href="index-aboutus.html">About Us</a>
+
+          
+          <div class="dropdown">
+            <button class="dropbtn">Shop
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-bikes.html">Bikes</a>
+              <a href="index-accessories.html">Accessories</a>
+              <a href="index-apparel.html">Apparel</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-fullcustom.html">Full Custom</a>
+              <a href="index-customizedbuild.html">Customized Build</a>
+              <a href="index-repair.html">Repair</a>
+            </div>
+          </div>
+
+          <a href="index-contactus.html">Contact Us</a>
+
+          <!-- Form attached -->
+          <a href="index-inquire.html" class="inquire-btn"><span>Inquire</span></a>
+        
+
+        <!-- Responsive top nav: hamburger icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+  
+ <!-- Begin parallax image -->
+ <div class="parallax">
+  <h1>Contact Us</h1>
+
+<!-- Transparent content block -->
+  <section id="contact-us" class="block">
+    <div class="contact-icons">
+    <i class="fas fa-envelope fa-4x"></i>
+    <i class="fas fa-phone-alt fa-4x"></i>
+    <i class="fas fa-map-marker-alt fa-4x"></i></div>
+
+</section>
+
+<footer>
+  <p>© Julie Patel 2021<br></p>
+</footer>
+
+</body>
+</html>

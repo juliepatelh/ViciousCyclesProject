@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicious Cycles</title>
+    <link rel="stylesheet" type="text/css" href="css/systems-main.css" >
+    <!-- Source for icons: font awesome source code -->
+    <script src="https://kit.fontawesome.com/f527d8a4ea.js" crossorigin="anonymous"></script>
+    <!-- Responsive top nav -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "mynavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "mynavbar";
+        }
+      }
+      </script>
+
+</head>
+
+<body>
+    <!-- Top navigation bar -->
+    <nav id="navbar" class="mynavbar">
+        
+          <a href=index-home.html class="logo"><img src="images/vicious-cycles-logo.png"></a>
+          <a href="index-home.html">Home</a>
+          <a href="index-aboutus.html">About Us</a>
+
+          
+          <div class="dropdown">
+            <button class="dropbtn">Shop
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-bikes.html">Bikes</a>
+              <a href="index-accessories.html">Accessories</a>
+              <a href="index-apparel.html">Apparel</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-fullcustom.html">Full Custom</a>
+              <a href="index-customizedbuild.html">Customized Build</a>
+              <a href="index-repair.html">Repair</a>
+            </div>
+          </div>
+
+          <a href="index-contactus.html">Contact Us</a>
+
+          <!-- Form attached -->
+          <a href="index-inquire.html" class="inquire-btn"><span>Inquire</span></a>
+        
+
+        <!-- Responsive top nav: hamburger icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+<!-- Begin parallax image -->
+ <div class="parallax">
+  <h1>About Us</h1>
+
+  <!-- Transparent content block -->
+  <section id="about-us" class="block">
+    <h3>Owner Bio</h3><br>
+    <img src="images/owner-image.jpg" alt="Vicious Cycles Owner" class="responsive">
+    <p>After spending my whole life on pedals, finishing my degree in mechanical 
+    engineering and working for two large companies making bikes I decided to
+    change my priorities in life. I’ve never been good at sitting in an office 
+    waiting for Friday to come so, decided to start being self-employed. 
+    While I started off with engineering projects for companies in the bike 
+    industry, I also began to make notes and write down ideas for the bike 
+    I would make myself. I soon felt that my excitement wasn’t going to get 
+    any less and decided to explore the road of what has now become Vicious!</p>
+  </section>
+
+   <!-- End parallax image -->
+   <div class="parallax"></div>
+
+   <!-- Block of text begins -->
+   <section id="scroll-box">
+       <h3>Our Philosophy</h3>
+       <br>
+       <p>When you choose your bike, you should choose it based on the folks who will not only build your bicycle, but also those who will help you get comfortable on the bike, as well as provide service down the road as you need it. <br><br>
+        The best things in life are pretty simple. Riding bikes with friends, discovering new places and finding new trails are definitely included. Riding bikes helps us to disconnect from the hectic and noisy world and connect with friends, nature and ourselves. It might just be the best thing ever.
+        Technological advancement, digital exploration and the growing globalization defines the world we live in and will bring more change in the years to come than ever before. It’s a world full of uncertainties where it’s easy to get lost. But bikes are a very rare breed of products that are completely mechanical and analogue. There aren’t many products that are so simple yet so sophisticated in their designs. Maybe that is what started my excitement for bikes as products. The process of observing, designing, improving, engineering and producing bikes surely is the second-best thing ever.</p>
+   </section>
+
+
+   <!-- Begin parallax image again -->
+   <div class="parallax">
+
+    <footer>
+      <p>© Julie Patel 2021<br></p>
+   </footer>
+
+</body>
+</html>

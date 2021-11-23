@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicious Cycles</title>
+    <link rel="stylesheet" type="text/css" href="css/systems-main.css" >
+    <!-- Source for icons: font awesome source code -->
+    <script src="https://kit.fontawesome.com/f527d8a4ea.js" crossorigin="anonymous"></script>
+    <!-- Responsive top nav -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "mynavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "mynavbar";
+        }
+      }
+      </script>
+
+</head>
+
+<body>
+    <!-- Top navigation bar -->
+    <nav id="navbar" class="mynavbar">
+        
+          <a href=index-home.html class="logo"><img src="images/vicious-cycles-logo.png"></a>
+          <a href="index-home.html">Home</a>
+          <a href="index-aboutus.html">About Us</a>
+
+          
+          <div class="dropdown">
+            <button class="dropbtn">Shop
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-bikes.html">Bikes</a>
+              <a href="index-accessories.html">Accessories</a>
+              <a href="index-apparel.html">Apparel</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Services
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index-fullcustom.html">Full Custom</a>
+              <a href="index-customizedbuild.html">Customized Build</a>
+              <a href="index-repair.html">Repair</a>
+            </div>
+          </div>
+
+          <a href="index-contactus.html">Contact Us</a>
+
+          <!-- Form attached -->
+          <a href="index-inquire.html" class="inquire-btn"><span>Inquire</span></a>
+        
+
+        <!-- Responsive top nav: hamburger icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- Begin parallax image -->
+    <div class="parallax">
+      <h1>Inquire</h1>
+    <!-- Begin inquiry form-->
+    <section id="form" class="block">
+        <h3>Let Us Know</h3><br>
+        <form id="questions" method="post" action="">
+            <ul>
+                <!-- Text boxes (3) -->
+                <label for="name">Please enter your first and last name:</label><br>
+                    <input type="text" name="name">
+                    <br>
+                <br>
+
+                <label for="address">Address:</label><br>
+                    <input type="text" name="address">
+                    
+                <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                    <input type="text" name="phone">
+                    
+                <br><br>
+                <!-- Dropdown selections -->
+                <label for="location">Which location are you interested in?</label><br>
+                    <select name="location" id="location">
+                        <option value="Raleigh">Raleigh</option>
+                        <option value="Durham">Durham</option>
+                        <option value="Cary">Cary</option>
+                    </select> <br>
+
+                    
+                <br>
+                <!-- Checkbox selections -->
+                    <fieldset>
+                        <legend>Select the service(s) that you are interested in:</legend>
+                        <input type="checkbox" name="services" value="Full Custom" id="Full Custom">
+                        <label for="Full Custom">Full Custom</label><br>
+                        <input type="checkbox" name="services" value="Customized Build" id="Customized Build">
+                        <label for="Customized Build">Customized Build</label><br>
+                        <input type="checkbox" name="services" value="Repair" id="Repair">
+                        <label for="Repair">Repair</label><br>
+                    </fieldset><br> <br>
+
+                <!-- Radio Selections -->
+                    <fieldset>
+                        <legend>Where did you hear about us from?</legend>
+                        <input type="radio" name="found" value="Instagram" id="Instagram">
+                        <label for="Instagram">Instagram</label><br>
+                        <input type="radio" name="found" value="Facebook" id="Facebook">
+                        <label for="Facebook">Facebook</label><br>
+                        <input type="radio" name="found" value="Google Search" id="Google Search">
+                        <label for="Google Search">Google Search</label><br>
+                        <input type="radio" name="found" value="Other" id="Other">
+                        <label for="Other">Other</label><br>
+                    </fieldset>
+    
+                     <br><br>
+                <label for="Comments">Any other questions or things we should know?</label><br>
+                <textarea for="Comments" name="Comments"></textarea><br>
+                <br><input type="submit">
+            </ul>
+        </form>
+    </section>
+    </section>
+    </div>
+
+
+    <!-- Continue parallax image -->
+    <div class="parallax"> </div>
+    
+    <!-- Continue parallax image -->
+    <div class="parallax"> </div>
+      
+    <footer>
+      <p>© Julie Patel 2021<br></p>
+   </footer>
+</body>
+</html>
